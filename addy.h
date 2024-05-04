@@ -2,7 +2,7 @@
 #include <corecrt_math.h>
 #include <stdlib.h>
 #include <iostream>
-#define x(x) (x - 0x400000 + (DWORD)GetModuleHandleA(0))
+#define x(x) (x - 0x400000 + (DWORD)GetModuleHandleA("minetest"))
 
 typedef int(__cdecl *SSS)();
 SSS SS = (SSS)x(0xBB5240);
